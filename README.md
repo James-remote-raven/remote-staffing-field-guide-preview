@@ -1,7 +1,25 @@
-# Remote Staffing Field Guide — static concept site
+# Remote Staffing Field Guide
 
-Two-page, static concept preview: https://james-remote-raven.github.io/remote-staffing-field-guide-preview/ . Open `index.html` locally or serve this folder with any static file host. The working name, visual design, and planning worksheet can change after Andrew and Bernard review it.
+Live site: https://james-remote-raven.github.io/remote-staffing-field-guide-preview/
 
-The site is intentionally separate from the engine and knowledgebase. It contains no internal documents, API calls, forms, logins, analytics, third-party scripts, or persistent storage. Its example article is labeled as a preview and the pages use `noindex,nofollow`. The only external links lead to the current public Remote Raven site.
+A static, public information site about remote staffing. The editorial brand leads the experience; every page links to a clear publisher disclosure on the About page, where Remote Raven is named. The current GitHub Pages URL retains “preview” until a permanent domain is chosen.
 
-Codex Sites was considered for hosting, but this session's in-app browser reached a sign-in page. GitHub Pages now serves this static preview without runtime credentials or a backend. The preview URL is publicly reachable, though the pages request no indexing. A public site for launch should be reviewed again after approved content, domain, and security controls are ready.
+## Pages
+
+- index.html — home and guide library
+- guide.html — defining a remote role
+- interviews.html — structured, job-related interviews
+- onboarding.html — planning the first month
+- about.html — purpose, editorial approach, and publisher disclosure
+
+The guides use practical examples and link to the primary sources behind factual claims: the International Labour Organization's telework guidance, the U.S. Office of Personnel Management's structured interview guidance, and NIST's enterprise telework security guidance. The ILO article was published in 2020 and the NIST publication in 2016; their publication dates and scope are stated on the relevant guide pages.
+
+The site has no forms, accounts, payments, analytics scripts, third-party JavaScript, backend, or connection to the private content engine or Remote Raven internal systems. The content engine and knowledgebase are not part of this repository. GitHub Pages serves only these static files.
+
+## Local preview
+
+Run Python's static server from this folder:
+
+    python -m http.server 8765
+
+Then open http://127.0.0.1:8765/ .
